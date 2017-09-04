@@ -1,0 +1,15 @@
+<h1>Welcome to Chat Learner</h1>
+
+<p>You can teach Chat Learner how to talk to you.</p>
+<p>Enjoy your conversation with Chat Learner!</p>
+
+<form action='/chat/create'>
+	<input type='text' name='content'/>
+	<button type='submit'>Chat</button>
+</form>
+
+<ul>
+	<% Chat.all.each do |x| %>
+		<li><%= x.is_man ? "You" : "Chat Learner" %>: <%= x.content %></li>
+	<% end %>
+</ul>
