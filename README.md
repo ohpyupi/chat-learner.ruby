@@ -1,24 +1,10 @@
-# README
+# Chat Learner in Ruby
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a toy project to build a chat bot that can be taught how to answer a user's question.
 
-Things you may want to cover:
+Basically, when you type your question, the bot will search a dictionary table whether the corresponding question/answer pairs are already stored or not. If found, the bot will answer your question choosing randomly a possible answer. If not found, it will ask you to teach a possible question/answer pair and store it in the dictionaly table.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To test the bot,
+`
+rails s
+`
